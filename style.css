@@ -1,0 +1,616 @@
+body {
+    font-family: 'Krub',
+        sans-serif;
+    margin: 0 0.5em;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.navn h1 {
+    margin: 0.5em 0 0.1em;
+}
+
+.navn {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin: 0 0 3em;
+}
+
+
+
+/*Forside*/
+
+#portfolio {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+
+}
+
+
+
+/*flipimage*/
+
+.flip img {
+    width: 300px;
+    height: 400px;
+}
+
+#forside {
+    display: flex;
+    justify-content: center;
+
+}
+
+.flip {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 0 1em 0 2em;
+}
+
+.flipinner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip:hover .flipinner {
+    transform: rotateY(180deg);
+}
+
+.flipfront,
+.flipback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flipfront {
+    background-color: #bbb;
+    color: black;
+    z-index: 2;
+}
+
+.flipback {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+/*Bokse*/
+
+.boksevenstre {}
+
+.boksevenstre p {
+    text-align: center;
+    margin: 0;
+    padding: 0.5em 0 0;
+}
+
+.boksehojre p {
+    text-align: center;
+    margin: 0;
+    padding: 0.5em 0 0;
+}
+
+
+
+/*boks1*/
+
+.boks1 {
+    background-color: lightyellow;
+    width: 11em;
+    height: 11em;
+    margin: 0 0 2em 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.boks1 img {
+    width: 7em;
+    margin: 0.5em 2em;
+}
+
+.boks1:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+/*
+.boks1 img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+*/
+
+
+
+
+/*boks2*/
+
+.boks2 {
+    background-color: skyblue;
+    width: 11em;
+    height: 11em;
+    margin: 0 0 2em 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.boks2 img {
+    width: 7em;
+    margin: 0.5em 2em;
+}
+
+.boks2:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+/*
+.boks2 img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+*/
+
+
+
+/*boks3*/
+
+.boks3 {
+    background-color: pink;
+    width: 11em;
+    height: 11em;
+    margin: 0 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.boks3 img {
+    width: 7em;
+    margin: 0.5em 2em;
+}
+
+/*
+.boks3 img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+*/
+
+.boks3:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+/*boks4*/
+
+.boks4 {
+    background-color: aliceblue;
+    width: 11em;
+    height: 11em;
+    margin: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.boks4 img {
+    width: 7em;
+    margin: 0.5em 2em;
+}
+
+/*
+.boks4 img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+*/
+
+.boks4:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+/*Tema 1 HTML*/
+
+
+#HTML {
+    margin: 1em 5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.tema1 h1 {
+    font-size: 2.5em;
+    margin: 1em;
+}
+
+
+.tekst1 {
+    margin: 1em;
+    width: 35em;
+
+}
+
+.tekst2 {
+    width: 35em;
+    margin: 1em;
+}
+
+
+.eksempler {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3em 0 0;
+}
+
+
+.eksempler img {
+    border: 0.5em;
+    border-radius: 0.5em;
+    width: 10em;
+    margin: 0 0 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.eksempler img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+/*tema 2 content*/
+
+#VIDEO {
+    margin: 1em 5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.tema2 h1 {
+    font-size: 2.5em;
+    margin: 1em;
+}
+
+.tema2 p {
+    margin: 1em 1.5em 0 0;
+}
+
+
+/*Videostyle*/
+
+.videocontainer {
+    margin: 1.5em 0 2em 0;
+    position: relative;
+}
+
+.videocontainer video {
+    position: relative;
+    z-index: 0;
+}
+
+#video {
+    width: 40em;
+    /*    max-height: 100%;*/
+}
+
+.contenttekst1 {
+    margin: 0 1em 0 0;
+}
+
+/*tekststyle*/
+
+.videotext {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 38em;
+    padding: 1em;
+}
+
+
+/*buttonstyle*/
+
+#knap {
+    width: 10em;
+    height: 3em;
+    font-size: 1em;
+    border: none;
+    background: #ffffb3;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#knap:hover {
+    background: #ffff80;
+    color: black;
+}
+
+#knap a:hover {
+    background: #ffff80;
+    color: #000;
+}
+
+
+
+
+/*Redesign*/
+
+#redesigntop {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 5em;
+
+}
+
+#redesign {
+    margin: 1.5em 5em;
+    display: flex;
+
+}
+
+
+.redesigntekst {
+    margin: 0em;
+}
+
+
+
+
+
+.redboks1 img {
+    width: 20em;
+    margin: 0.5em 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /*    border-radius: 50%;*/
+
+}
+
+.redboks1 img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.redboks2 img {
+    width: 20em;
+    margin: 0.5em 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /*    border-radius: 50%;*/
+
+}
+
+.redboks2 img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+/*tema 3 Animation*/
+
+
+.top {
+    margin: 1em 5em;
+}
+
+.tema h1 {
+    font-size: 2.5em;
+    margin: 1em;
+
+}
+
+#animation {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5em 5em 3em;
+}
+
+.anmtekst1 {
+    margin: 1em 1em 1em 0;
+    padding: 1em;
+    background-color: lightyellow;
+}
+
+.anmtekst2 {
+    margin: 1em 0em 1em 1em;
+    padding: 1em;
+    background-color: lightyellow;
+}
+
+.anmbillede1 {
+    padding: 0 0 0 4em
+}
+
+.anmbillede2 {
+    padding: 0 0 0 4em
+}
+
+.anmbillede1 img {
+    width: 30em;
+    margin: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.anmbillede2 img {
+    width: 30em;
+    margin: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+#egern_sprite {
+    background-image: url("egern_sprite.svg");
+    background-size: 500% 100%;
+    width: 20em;
+    height: 20em;
+}
+
+
+/*spil*/
+
+#spil {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5em 5em 3em;
+}
+
+
+.spilcontainer img {
+    width: 20em;
+    margin: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.spilcontainer img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.spiltekst {
+    margin: 1em;
+    padding: 1em;
+    height: 20em;
+    background-color: lightyellow;
+}
+
+.ssspiltekst {
+    margin: 1.5em 5em 2em;
+    padding: 1em;
+    background-color: lightyellow;
+}
+
+#sexogsamfund {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5em 5em 4em;
+}
+
+
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg;
+        )
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.blink {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: steps(4)
+}
+
+
+
+@keyframes blink {
+
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -400% 0;
+    }
+}
