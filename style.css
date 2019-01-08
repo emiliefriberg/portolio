@@ -518,7 +518,6 @@ a {
 .spiltekst {
     margin: 1em;
     padding: 1em;
-    height: 20em;
     background-color: lightyellow;
 }
 
@@ -535,6 +534,36 @@ a {
 }
 
 
+/*tema 4 ux*/
+
+.uxcontainer1 {
+    margin: 1em 5em 4em;
+    display: flex;
+    flex-direction: row;
+}
+
+.uxbillede1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+
+.uxtekst1 {
+    width: 30em;
+}
+
+
+.uxbillede1 img {
+    border: 0.5em;
+    border-radius: 0.5em;
+    width: 10em;
+    margin: 0.2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#fuldvideo {
+    width: 100%;
+}
 
 @keyframes shake {
     0% {
