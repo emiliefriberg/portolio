@@ -272,7 +272,6 @@ a {
 .eksempler {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     margin: 3em 0 0;
 }
 
@@ -281,7 +280,7 @@ a {
     border: 0.5em;
     border-radius: 0.5em;
     width: 10em;
-    margin: 0 0 1em;
+    margin: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -437,9 +436,8 @@ a {
 /*tema 3 Animation*/
 
 
-.top {
-    margin: 1em 5em;
-}
+
+/*spil*/
 
 .tema h1 {
     font-size: 2.5em;
@@ -447,10 +445,69 @@ a {
 
 }
 
+#spil {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5em 5em 3em;
+}
+
+.spiltekst {
+    margin: 1em;
+    padding: 1em 1em 0;
+    background-color: lightyellow;
+}
+
+#egern_sprite {
+    background-image: url("egern_sprite.svg");
+    background-size: 500% 100%;
+    width: 20em;
+    height: 20em;
+}
+
+
+.spilcontainer img {
+    width: 20em;
+    margin: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.spilcontainer img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.ssspiltekst {
+    margin: 1.5em 5em 2em;
+    padding: 1em;
+    background-color: lightyellow;
+}
+
+#sexogsamfund {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5em 5em 4em;
+}
+
+
+
+.top {
+    margin: 1em 5em;
+}
+
+
 #animation {
     display: flex;
     flex-direction: row;
     margin: 1.5em 5em 3em;
+}
+
+#anmcontainer1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 1.5em 5em 3em;
+
+
 }
 
 .anmtekst1 {
@@ -459,19 +516,6 @@ a {
     background-color: lightyellow;
 }
 
-.anmtekst2 {
-    margin: 1em 0em 1em 1em;
-    padding: 1em;
-    background-color: lightyellow;
-}
-
-.anmbillede1 {
-    padding: 0 0 0 4em
-}
-
-.anmbillede2 {
-    padding: 0 0 0 4em
-}
 
 .anmbillede1 img {
     width: 30em;
@@ -487,51 +531,6 @@ a {
 }
 
 
-#egern_sprite {
-    background-image: url("egern_sprite.svg");
-    background-size: 500% 100%;
-    width: 20em;
-    height: 20em;
-}
-
-
-/*spil*/
-
-#spil {
-    display: flex;
-    flex-direction: row;
-    margin: 1.5em 5em 3em;
-}
-
-
-.spilcontainer img {
-    width: 20em;
-    margin: 1em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.spilcontainer img:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-}
-
-.spiltekst {
-    margin: 1em;
-    padding: 1em;
-    background-color: lightyellow;
-}
-
-.ssspiltekst {
-    margin: 1.5em 5em 2em;
-    padding: 1em;
-    background-color: lightyellow;
-}
-
-#sexogsamfund {
-    display: flex;
-    flex-direction: row;
-    margin: 1.5em 5em 4em;
-}
 
 
 /*tema 4 ux*/
