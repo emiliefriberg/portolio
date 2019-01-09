@@ -862,7 +862,7 @@ a {
     /*    tema2*/
 
     #VIDEO {
-        margin: 0.1em;
+        margin: 0.1em 0.1em 1em 0.1em;
         flex-direction: column;
     }
 
@@ -873,6 +873,7 @@ a {
 
 
     #video {
+        margin: 2em 0.1em 0.1em 0.1em;
         width: 24em;
         /*    max-height: 100%;*/
     }
@@ -882,6 +883,7 @@ a {
 
     .videotext {
         width: 22em;
+        padding: 0 1em 1em 1em;
     }
 
 
