@@ -433,6 +433,10 @@ a {
 
 }
 
+#redesigntop .knap3 {
+    margin: 1em;
+}
+
 #redesign {
     margin: 1.5em 5em;
     display: flex;
@@ -895,8 +899,11 @@ a {
 
     #redesigntop {
         margin: 0.1em 0.1em 0.1em 2em;
+        flex-direction: column;
 
     }
+
+
 
     #redesign {
         margin: 0.1em;
