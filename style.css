@@ -251,7 +251,14 @@ a {
     flex-direction: row;
 }
 
-.tema1 h1 {
+#tema1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+
+#tema1 h1 {
     font-size: 2.5em;
     margin: 1em;
 }
@@ -305,12 +312,18 @@ a {
     flex-direction: row;
 }
 
-.tema2 h1 {
+#tema2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+#tema2 h1 {
     font-size: 2.5em;
     margin: 1em;
 }
 
-.tema2 p {
+#tema2 p {
     margin: 1em 1.5em 0 0;
 }
 
@@ -352,24 +365,60 @@ a {
 
 /*buttonstyle*/
 
-#knap {
+
+.knap3 {
     width: 10em;
     height: 3em;
     font-size: 1em;
     border: none;
-    background: #ffffb3;
+    background-color: #ffffb3;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
 }
 
-#knap:hover {
-    background: #ffff80;
+.knap3 a {
+    padding: 1em;
+}
+
+.knap3:hover {
+    background-color: #ffff80;
+}
+
+.knap3 a:hover {
+    background-color: #ffff80;
     color: black;
 }
 
-#knap a:hover {
-    background: #ffff80;
-    color: #000;
+
+
+.knap1:hover {
+    background-color: cornflowerblue;
+    color: black;
+}
+
+.knap1 a:hover {
+    color: #fff;
+}
+
+.knap1 {
+    width: 10em;
+    height: 3em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    background-color: skyblue;
+    position: fixed;
+    right: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.knap1 a {
+    padding: 1em;
 }
 
 
@@ -379,7 +428,7 @@ a {
 
 #redesigntop {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 1.5em 5em;
 
 }
@@ -439,11 +488,18 @@ a {
 
 /*spil*/
 
-.tema h1 {
+#tema3 h1 {
     font-size: 2.5em;
     margin: 1em;
 
 }
+
+#tema3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
 
 #spil {
     display: flex;
@@ -452,9 +508,8 @@ a {
 }
 
 .spiltekst {
-    margin: 1em;
-    padding: 1em 1em 0;
-    background-color: lightyellow;
+    margin: 1em 1em 1.5em 0;
+    padding: 1em 1em 0 0em;
 }
 
 #egern_sprite {
@@ -462,6 +517,12 @@ a {
     background-size: 500% 100%;
     width: 20em;
     height: 20em;
+}
+
+.spilcontainer1 img {
+    width: 20em;
+    margin: 0.1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -476,10 +537,14 @@ a {
     animation-iteration-count: infinite;
 }
 
+.spilcontainer1 img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
 .ssspiltekst {
     margin: 1.5em 5em 2em;
     padding: 1em;
-    background-color: lightyellow;
 }
 
 #sexogsamfund {
@@ -498,22 +563,20 @@ a {
 #animation {
     display: flex;
     flex-direction: row;
-    margin: 1.5em 5em 3em;
+    margin: 1.5em 5em 0.1em;
 }
 
 #anmcontainer1 {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: 1.5em 5em 3em;
+    margin: 0.1em 5em 5em;
 
 
 }
 
 .anmtekst1 {
-    margin: 1em 1em 1em 0;
-    padding: 1em;
-    background-color: lightyellow;
+    margin: 0.1em 1em 1em 0;
 }
 
 
@@ -534,6 +597,19 @@ a {
 
 
 /*tema 4 ux*/
+
+#tema4 h1 {
+    font-size: 2.5em;
+    margin: 1em;
+
+}
+
+#tema4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
 
 .uxcontainer1 {
     margin: 1em 5em 4em;
@@ -570,8 +646,7 @@ a {
     }
 
     10% {
-        transform: translate(-1px, -2px) rotate(-1deg;
-        )
+        transform: translate(-1px, -2px) rotate(-1deg);
     }
 
     20% {
@@ -641,4 +716,318 @@ a {
     100% {
         background-position: -400% 0;
     }
+}
+
+
+/*media querys*/
+
+
+@media only screen and (max-width: 400px) {
+
+
+    .flip img {
+        width: 300px;
+        height: 400px;
+    }
+
+    #forside {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .flip {
+        background-color: transparent;
+        width: 300px;
+        height: 400px;
+        perspective: 1000px;
+        margin: 0 0 3em;
+    }
+
+    .flipinner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip:hover .flipinner {
+        transform: rotateY(180deg);
+    }
+
+    .flipfront,
+    .flipback {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .flipfront {
+        background-color: #bbb;
+        color: black;
+        z-index: 2;
+    }
+
+    .flipback {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+        z-index: 1;
+    }
+
+
+    /*Bokse*/
+
+
+
+    /*boks1*/
+
+    .boks1 {
+
+        margin: 2em;
+
+    }
+
+
+    /*boks2*/
+
+    .boks2 {
+
+        margin: 2em;
+
+    }
+
+
+
+    /*boks3*/
+
+    .boks3 {
+
+        margin: 2em;
+
+    }
+
+
+
+    /*boks4*/
+
+    .boks4 {
+        margin: 2em;
+
+    }
+
+
+
+
+
+
+    /*tema 1*/
+
+
+
+    #HTML {
+        margin: 0.1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tekst1 {
+        margin: 0.5em;
+        width: 23em;
+
+    }
+
+
+    .eksempler {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+    /*    tema2*/
+
+    #VIDEO {
+        margin: 0.1em;
+        flex-direction: column;
+    }
+
+
+
+    /*Videostyle*/
+
+
+
+    #video {
+        width: 24em;
+        /*    max-height: 100%;*/
+    }
+
+
+    /*tekststyle*/
+
+    .videotext {
+        width: 22em;
+    }
+
+
+    /*buttonstyle*/
+
+
+    #knap1 {
+        width: 6em;
+
+    }
+
+
+
+    /*Redesign*/
+
+    #redesigntop {
+        margin: 0.1em 0.1em 0.1em 2em;
+
+    }
+
+    #redesign {
+        margin: 0.1em;
+        flex-direction: column;
+
+    }
+
+
+
+
+
+
+
+
+
+
+    /*tema 3 Animation*/
+
+
+
+    /*spil*/
+
+
+
+
+    #spil {
+        display: flex;
+        flex-direction: column;
+        margin: 0.1em;
+    }
+
+
+
+    .spilcontainer img {
+        width: 20em;
+        margin: 0.1em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+    .spilcontainer1 {
+        width: 20em;
+        margin: 1.5em 0.1em 1.5em 2em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .ssspiltekst {
+        margin: 0.1em;
+    }
+
+    #sexogsamfund {
+        flex-direction: column;
+        margin: 1.5em 1em 1em 1.5em;
+    }
+
+
+
+    .top {
+        margin: 1.5em 0.1em;
+    }
+
+
+    #animation {
+        margin: 1.5em 0.1em;
+    }
+
+    #anmcontainer1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0.1em;
+
+
+    }
+
+    .anmtekst1 {
+        margin: 1.5em 0.1em;
+    }
+
+
+    .anmbillede1 img {
+        width: 23em;
+        margin: 0.1em 0 1.5em 0.5em;
+
+    }
+
+    .anmbillede2 img {
+        width: 23em;
+        margin: 0.1em 0 1.5em 0.5em;
+    }
+
+
+
+
+
+
+    /*tema 4 ux*/
+
+
+    .uxcontainer1 {
+        margin: 0.1em 0;
+        flex-direction: column;
+    }
+
+    .uxbillede1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1.5em 0 1.5em 1.5em;
+    }
+
+    .uxtekst1 {
+        width: 24em;
+    }
+
+
+    .uxbillede1 img {
+        border: 0.5em;
+        border-radius: 0.5em;
+        width: 10em;
+        margin: 0.2em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #fuldvideo {
+        width: 100%;
+    }
+
+
+
+
+
+
+
 }
